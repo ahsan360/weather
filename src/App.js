@@ -47,7 +47,7 @@ function App() {
           <div className="bottom">
             <div className="feels">
               {data.main ? (
-                <p className="bold">{data.main.feels_like.toFixed()}°F</p>
+                <p className="bold">{((data.main.temp - 32) * (5 / 9)).toFixed(2)}°C</p>
               ) : null}
               <p>Feels Like</p>
             </div>
